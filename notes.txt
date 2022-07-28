@@ -23,3 +23,28 @@ Appium design:
  (Appium server runs requests and runs automation using the native automation framework of that particular mobile device)
  (Appium interacts with the automation framework of that mobile device and uses it to run your script and perform automation on that app)
  Appium server establishes connection with Appium client (your webdriver script)
+
+Appium works in a client - server architecture. Client and sever can talk to each other with a protocol over some network.
+Appium client and Appium server
+Appium is a HTTP server written using Node.js platform
+Downloading and installing Appium - installing the Appium node.js server
+
+Appium client - Client libraries, can be written in multiple languages
+Download Appium client libraries and use them into automation frameworks
+
+Ex: want to create Appium automation framework in Java - get the Java appium client libraries and add them into framework so you can access the functionality
+Appium client / client code created goes to the Appium server when we run our code or request and the appium server performs the action on the device's mobile app
+It can support android, iOS and windows platforms
+
+Requests to the server can't be sent in the format the Appium client is written in
+Appium server understands HTTP RESTful format - JSON wire protocol is used to convert client request into the REST format
+
+Vendors are used to access and perform actions on the mobile device - not the appium server itself
+    Vendor specific drivers
+    Different vendor drivers for iOS, Android and Windows
+
+Desired capabilities - set of keys and values sent to the Appium server to tell the server what kind of automation session we're interested in starting up
+Capabilities such as device name, platform name, platform version
+Can also set desired capabilities via Appium desktop
+
+Desired capabilities are sent along with your Appium client request as a JSON object to the server
