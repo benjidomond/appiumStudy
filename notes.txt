@@ -1,0 +1,6 @@
+What is Appium?
+
+Open source tool used to automate mobile apps
+Appium can automate native (native to mobile device ex. Calendar, Calculator), web (apps accessed via a mobile browser such as Chrome or Safari) and Hybrid (combo of a native and web app.
+Hybrid apps are native apps which interact w/ the web too.)
+Appium also supports android, IOS and windows desktop platforms.
