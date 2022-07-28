@@ -4,3 +4,22 @@ Open source tool used to automate mobile apps
 Appium can automate native (native to mobile device ex. Calendar, Calculator), web (apps accessed via a mobile browser such as Chrome or Safari) and Hybrid (combo of a native and web app.
 Hybrid apps are native apps which interact w/ the web too.)
 Appium also supports android, IOS and windows desktop platforms.
+Appium supports multiple programming langauges
+
+Appium TLDR:
+- Mobile automation tool
+- Supports Android, iOS and Windows desktop platforms
+- Supports multiple programming langauges
+- Supports native / web / hybrid apps
+- Appium is also open source!
+
+Appium history:
+- Created by Dan Cuellar in 2011 - was initially known as iOSAuto and was made open source in 2012
+
+Appium design:
+ Webdriver Script
+ (Appium uses Selenium's webdriver library, that's why Appium supports all the languages that Selenium does)
+ (Write scripts using the webdriver library. After this, the webdriver / JSON wire protocol is used to convert your scripts into HTTP REST based requests that can be understood by the Appium server)
+ (Appium server runs requests and runs automation using the native automation framework of that particular mobile device)
+ (Appium interacts with the automation framework of that mobile device and uses it to run your script and perform automation on that app)
+ Appium server establishes connection with Appium client (your webdriver script)
