@@ -48,3 +48,42 @@ Capabilities such as device name, platform name, platform version
 Can also set desired capabilities via Appium desktop
 
 Desired capabilities are sent along with your Appium client request as a JSON object to the server
+
+Appium Installation Guide:
+How to install Appium with node.js or Appium Desktop
+Check Appium installation and dependencies with appium-doctor
+How to uninstall Appium
+
+Installing Appium with Node.js
+- Check if node.js is installed on your system
+    Run the cmd prompt on your computer (either as an admin or not) and type in node --version
+    If you get a message that node is not recognized, then node is not installed.
+    You can also check with npm --version and if npm is not recognized, then node is not installed too!
+    You can also type in node -v or npm -v, it's the same result as -- version!
+
+Download the node.js installer via the node.js website and pick the version which matches your system type (32 bit or 64 bit)
+Then, run the installer and install node.js and npm
+Node.js native modules? Look into later on?
+
+After installing node/npm, make sure you restart your command prompt before checking if the install was successful
+Node --version, node -v, npm --version and npm -v should all work.
+
+You can also use where node and where npm to get the directory where they're installed in.
+
+Install Appium on node.js using npm install -g (global installation) appium
+There may be some warnings and errors after installing but just check and see if the installation was successful
+Done with appium --version, appium -v or where appium
+
+Lastly, start appium using the keyword appium
+Once running, end server with ctrl + C
+4723 = Appium default port
+
+Installing Appium with Appium desktop client:
+Go to Appium's official website and download the Appium desktop client
+Once on Appium's website, select download Appium and download the Windows exe
+Then, install the Appium desktop client which provides a GUI that lets you manage appium from it
+Can choose to make only admin or anyone on the system able to use appium desktop tool. For now, let's select anyone.
+
+Run Appium desktop tool after installation! Default host is 0.0.0.0
+After starting Appium via the desktop tool, if you try to start up an appium instance via your command prompt, it'll fail and tell you that the current port is in use.
+Ended at 15:34
